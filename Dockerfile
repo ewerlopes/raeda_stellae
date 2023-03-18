@@ -14,4 +14,4 @@ RUN pip install -r requirements.txt
 CMD ["flask", "run", "--host=0.0.0.0"]
 
 # Setting a port for your app communications with Telegram servers.
-EXPOSE 80/tcp
+EXPOSE 5000/tcp
