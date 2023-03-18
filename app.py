@@ -12,7 +12,7 @@ bot = telegram.Bot(token=TOKEN)
 app = Flask(__name__)
 
 
-@app.route(f'/{TOKEN}', methods=['POST', 'GET'])
+@app.route(f'/{TOKEN}', methods=['PUT', 'GET'])
 def respond():
     # retrieve the message in JSON and then transform it to Telegram object
     update = telegram.Update.de_json(request.get_json(force=True), bot)
