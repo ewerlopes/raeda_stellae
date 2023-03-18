@@ -65,4 +65,4 @@ def index():
 if __name__ == '__main__':
     # note the threaded arg which allow
     # your app to have more than one thread
-    app.run(threaded=True, host='0.0.0.0')
+    app.run(threaded=True, port=80, host='0.0.0.0')
