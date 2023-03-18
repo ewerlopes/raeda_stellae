@@ -59,7 +59,7 @@ def set_webhook():
 
 @app.route('/')
 def index():
-    return '.'
+    return 'RAEDA STELLAE...'
 
 
 if __name__ == '__main__':
