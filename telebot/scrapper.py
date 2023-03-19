@@ -45,6 +45,7 @@ class OfertaSeminovos:
             'KM': self.km,
             'Marca': self.marca,
             'Modelo': self.modelo,
+            'Carroceria': self.carroceria,
             'Tipo Vendedor': self.tipo_vendedor,
             'Transmissao': self.transmissao,
             'Valor': self.valor,
@@ -101,7 +102,7 @@ def parse_cars(carList):
         ports = car['Specification']['NumberPorts']
         ano_fabricacao = int(car['Specification']['YearFabrication'])
         ano_modelo = int(car['Specification']['YearModel'])
-        carroceria = str(car['Specification']['Bodytype'])
+        carroceria = str(car['Specification']['BodyType'])
         id = car['UniqueId']
         link = 'https://www.webmotors.com.br/comprar/' + make.decode() + '/' + model.decode() + '/' + version.decode().replace(
             ' ', '-',) + '/' + str(ports) + '-portas/' + str(ano_fabricacao) + '-' + str(ano_modelo) + '/' + str(id)
