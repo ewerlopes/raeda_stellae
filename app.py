@@ -9,7 +9,7 @@ global TOKEN
 TOKEN = bot_token
 bot = telegram.Bot(token=TOKEN)
 
-app = Flask(__name__)
+app = Flask('RaedaStellaeBot')
 
 
 @app.route(f'/{TOKEN}', methods=['POST', 'GET'])
